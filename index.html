@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumoscale - Professional Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Lumoscale</a>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Innovative Solutions for Growth</h1>
+                <p>We help businesses scale with cutting-edge technologies and strategic insights.</p>
+                <a href="#contact" class="btn cta-btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with the latest technologies to ensure performance and scalability.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Applications</h3>
+                    <p>Native and cross-platform mobile apps that deliver exceptional user experiences.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Transform your data into actionable insights to drive strategic business decisions.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure, scalable cloud infrastructure tailored to your business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-title="E-commerce Platform" data-description="A fully responsive e-commerce solution with integrated payment gateways.">
+                    <img src="ecommerce.png" alt="E-commerce Project" class="lazy-load">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-title="Finance Mobile App" data-description="A secure financial tracking application with real-time updates and analytics.">
+                    <img src="finance app.png" alt="Finance App" class="lazy-load">
+                    <div class="portfolio-overlay">
+                        <h3>Finance Mobile App</h3>
+                        <p>Mobile Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-title="Healthcare Dashboard" data-description="An interactive analytics dashboard for healthcare providers to track patient data.">
+                    <img src="healthcare.png" alt="Healthcare Dashboard" class="lazy-load">
+                    <div class="portfolio-overlay">
+                        <h3>Healthcare Dashboard</h3>
+                        <p>Data Analytics</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-title="Cloud Migration" data-description="Successfully migrated a legacy system to a modern cloud architecture, improving performance by 200%.">
+                    <img src="cloud.png" alt="Cloud Migration" class="lazy-load">
+                    <div class="portfolio-overlay">
+                        <h3>Cloud Migration</h3>
+                        <p>Cloud Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Portfolio Items -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Project Image">
+            </div>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"Lumoscale transformed our business with their innovative web solutions. Our online sales have increased by 45% since launch."</p>
+                            <div class="testimonial-author">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The mobile app developed by Lumoscale exceeded our expectations. User engagement is up 70% and customer feedback has been overwhelmingly positive."</p>
+                            <div class="testimonial-author">
+                                <h4>Michael Brown</h4>
+                                <p>Product Director, MobiConnect</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Their data analytics solution provided insights we never knew existed in our business. We've optimized our operations and increased profitability."</p>
+                            <div class="testimonial-author">
+                                <h4>Emma Wilson</h4>
+                                <p>Operations Manager, DataFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business Avenue, Tech City</p>
+                    <p><i class="fas fa-phone"></i> +91 8919053970
+                    </p>
+                    <p><i class="fas fa-envelope"></i> lumoscale@gmail.com
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/LumoScale" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                       </a>
+                       <a href="https://github.com/LumoScale" class="social-icon github">
+                            <i class="fab fa-github"></i>
+                       </a>
+                       <a href="https://linkedin.com/company/lumoscale" class="social-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                       </a>
+                       <a href="https://youtube.com/c/lumoscale" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                       </a>
+                       <a href="https://www.instagram.com/lumoscale_12/" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+         </div>
+                </div>
+                <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Lumoscale</h3>
+                    <p>Innovative solutions for modern businesses</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Lumoscale. All Rights Reserved.</p>
+            </div>
+        </div>
+        <button id="back-to-top" class="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
